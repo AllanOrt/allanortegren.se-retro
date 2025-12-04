@@ -13,9 +13,9 @@
     <style>
         @font-face {
             font-family: 'MyFont';
-            src: url('/fonts/Comic Sans MS.woff2') format('woff2'),
-                url('/fonts/Comic Sans MS.woff') format('woff'),
-                url('/fonts/Comic Sans MS.ttf') format('truetype');
+            src: url('/assets/fonts/Comic Sans MS.woff2') format('woff2'),
+                url('/assets/fonts/Comic Sans MS.woff') format('woff'),
+                url('/assets/fonts/Comic Sans MS.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -36,45 +36,106 @@
             image-rendering: crisp-edges; 
         }
     </style>
+
+    <!-- SEO -->
+    <meta name="description" content="Jag heter Allan Örtegren och jag gillar att programmera. Kontakta mig om du vill ha en snygg och funktionell hemsida!">
+    <meta name="author" content="Allan Örtegren">
+    <link rel="canonical" href="https://allanortegren.se">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Allan Örtegren ">
+    <meta property="og:description" content="Jag heter Allan Örtegren och jag gillar att programmera. Kontakta mig om du vill ha en snygg och funktionell hemsida!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allanortegren.se">
+    <meta property="og:image" content="https://allanortegren.se/assets/images/allan.png">
+    <meta property="og:image:alt" content="Allan Örtegren">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Allan Örtegren">
+    <meta name="twitter:description" content="Jag heter Allan Örtegren och jag gillar att programmera och CTF:a!">
+    <meta name="twitter:image" content="https://allanortegren.se/assets/images/allan.png">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Allan Örtegren",
+        "url": "https://allanortegren.se",
+        "description": "Jag heter Allan Örtegren och jag gillar att programmera och CTF:a!",
+        "image": "https://allanortegren.se/assets/images/allan.png",
+        "email": "mailto:allan.ortegren@icloud.com",
+        "sameAs": [
+            "https://github.com/AllanOrt",
+            "https://www.linkedin.com/in/allan-%C3%B6rtegren/"
+        ]
+    }
+    </script>
+
+    <!-- Favicon och manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 </head>
+
+<!--
+__   __       _       _   _         _        _    _  _    ___
+\ \ / /_ _ __| |  __ (_)_(_) _   __| |_  _  | |_ (_)(_)_ |__ \
+ \ V / _` / _` | / _` / _ \ '_| / _` | || | | ' \/ _` | '_|/_/
+  \_/\__,_\__,_| \__, \___/_|   \__,_|\_,_| |_||_\__,_|_| (_)
+                 |___/
+-->
 
 <body class="bg-blue-500">
 
-    <main class="p-4">
-        <section id="welcome">                                                                            <!-- Custom -->
-            <h1 id="rainbow-text" class="text-purple-500 mb-4 text-5xl font-bold text-center uppercase    text-shadow">Allan Örtegren</h1>
-            <div class="bg-white/50 p-4 rounded-lg">
-                <p class="mb-4">
-                    Hallå! Jag heter Allan, är <span id="age"></span> år och gillar att programmera och CTF:a (datornörd). Jag är även delaktig inom <a class="text-red-500 hover:text-red-700 underline" href="https://fro.se/">Frivilliga Radioorginisationen (FRO)</a> som cyberungdom, och intresserad av webutvecklng (detta är ett fantastiskt exempel).
-                </p>     
-                <div class="mb-4 flex flex-wrap justify-around max-w-[15rem] mx-auto">
-                    <a href="#skillz" class="inline-block pixel-rendered">
-                        <p class="text-red-500 hover:text-red-700 underline text-center">Skillz</p>
-                        <img src="/images/computer.gif" alt="">
-                    </a>
-                    <a href="#om_mig" class="inline-block pixel-rendered">
-                        <p class="text-red-500 hover:text-red-700 underline text-center">Om mig</p>
-                        <img width="100%" src="/images/confused.gif" alt="">
-                    </a>
-                </div>                                       <!-- Custom -->
-                <div class="flex flex-wrap justify-center    pixel-rendered">
-                    <img src="/images/88x31/animbat.gif" alt="">
-                    <img src="/images/88x31/ab.gif" alt="">
-                    <img src="/images/88x31/aoltos_a.gif" alt="">
-                    <img src="/images/88x31/archlinux.gif" alt="">
-                    <img src="/images/88x31/built_with_microsoft_notepad.gif" alt="">
-                    <img src="/images/88x31/blitzani.gif" alt="">
-                    <img src="/images/88x31/hsajesusveg.gif" alt="">
-                    <img src="/images/88x31/letsnotencrypt.gif" alt="">
-                    <img src="/images/88x31/mwbuddy.gif" alt="">
-                    <img src="/images/88x31/jobsritchie.gif" alt="">
-                    <img src="/images/88x31/norton2.gif" alt="">
-                    <img src="/images/88x31/sc_baner.gif" alt="">
-                    <a href="https://fro.se/"><img src="/images/88x31/fro.gif" alt=""></a>
-                    <img src="/images/88x31/gregg.gif" alt="">
-                    <img src="/images/88x31/nkd.gif" alt="">
-                </div>
+    <main class="p-4">                                                                                <!-- Custom -->
+        <h1 id="rainbow-text" class="text-purple-500 mb-4 text-5xl font-bold text-center uppercase    text-shadow">Allan Örtegren</h1>
+        
+        <!-- === Welcome section === -->
+        <section id="welcome" class="bg-white/50 p-4 rounded-lg mb-8 max-w-2xl mx-auto">
+            <p class="mb-4">
+                Hallå! Jag heter Allan, är <span id="age"></span> år och gillar att programmera och CTF:a (datornörd). Jag är även delaktig inom <a class="text-red-500 hover:text-red-700 underline" href="https://fro.se/">Frivilliga Radioorginisationen (FRO)</a> som cyberungdom, och intresserad av webutvecklng (detta är ett fantastiskt exempel).
+            </p>     
+            <div class="mb-4 flex flex-wrap justify-around max-w-[15rem] mx-auto">
+                <a href="#skillz" class="inline-block pixel-rendered">
+                    <p class="text-red-500 hover:text-red-700 underline text-center">Skillz</p>
+                    <img src="/assets/images/computer.gif" alt="">
+                </a>
+                <a href="#om_mig" class="inline-block pixel-rendered">
+                    <p class="text-red-500 hover:text-red-700 underline text-center">Om mig</p>
+                    <img width="100%" src="/assets/images/confused.gif" alt="">
+                </a>
+            </div>                                       <!-- Custom -->
+            <div class="flex flex-wrap justify-center    pixel-rendered">
+                <img src="/assets/images/88x31/animbat.gif" alt="">
+                <img src="/assets/images/88x31/ab.gif" alt="">
+                <img src="/assets/images/88x31/aoltos_a.gif" alt="">
+                <img src="/assets/images/88x31/archlinux.gif" alt="">
+                <img src="/assets/images/88x31/built_with_microsoft_notepad.gif" alt="">
+                <img src="/assets/images/88x31/blitzani.gif" alt="">
+                <img src="/assets/images/88x31/hsajesusveg.gif" alt="">
+                <img src="/assets/images/88x31/letsnotencrypt.gif" alt="">
+                <img src="/assets/images/88x31/mwbuddy.gif" alt="">
+                <img src="/assets/images/88x31/jobsritchie.gif" alt="">
+                <img src="/assets/images/88x31/norton2.gif" alt="">
+                <img src="/assets/images/88x31/sc_baner.gif" alt="">
+                <a href="https://fro.se/"><img src="/assets/images/88x31/fro.gif" alt=""></a>
+                <img src="/assets/images/88x31/gregg.gif" alt="">
+                <img src="/assets/images/88x31/nkd.gif" alt="">
             </div>
+        </section>
+
+        <!-- Skillz section -->
+        <section id="skillz" class="bg-white/50 p-4 rounded-lg max-w-2xl mx-auto">
+                                                          <!-- Custom -->
+            <h2 class=" text-2xl font-bold text-center    rainbow-letters">Skillz</h2>
+            <ul class="list-disc pl-4">
+                <li class="mb-2">
+                    Hacka <img src="/assets/images/computer_emoji.gif" alt="" class="inline-block align-middle h-4">
+                </li>
+            </ul>
         </section>
     </main>
 
@@ -106,7 +167,6 @@
     }, 1000);
 
 
-
     const age = b => {
         const t = new Date(), d = new Date(b);
         return t.getFullYear() - d.getFullYear() - 
@@ -114,6 +174,24 @@
     };
 
     document.getElementById("age").textContent = age("2010-03-15");
+
+
+    /* --- Per-letter rainbow coloring for .rainbow-letters --- */
+    document.querySelectorAll('.rainbow-letters').forEach(el => {
+        const txt = el.textContent;
+        el.textContent = '';
+
+        let i = 0;
+
+        [...txt].forEach(char => {
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.classList.add(colors[i % colors.length]);
+            el.appendChild(span);
+            i++;
+        });
+    });
 </script>
+
 
 </html>
